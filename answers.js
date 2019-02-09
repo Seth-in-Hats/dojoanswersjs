@@ -196,7 +196,7 @@ function countdown(num) {
     for (let i = num; i >= 0; i--) {
         countArr.push(i);
     }
-    console.log(countArr);
+    // console.log(countArr);
     return countArr;
 }
 countdown(7);
@@ -204,7 +204,8 @@ countdown(7);
 /*2 - Print and Return: Your function will receive an array with two numbers. Print the first value, and return the second. */
 function printReturn([num1, num2]) {
     document.write(num1);
-    console.log(num2);
+    // console.log(num2);
+    return num2;
 }
 printReturn([1,7]);
 
@@ -213,7 +214,8 @@ function printReturn(arr) {
     let num1 = arr[0];
     let num2 = arr[1];
   document.write(num1);
-  console.log(num2);
+//   console.log(num2);
+  return num2;
 }
 printReturn([4,7]);
 
@@ -222,7 +224,8 @@ the array’s first value is not a number, but a string (like "what?") or a bool
 --If a word, it concats the word and the value "birds4" below. Bool - True = 1, false = 0, and it calculates accordingly */
 function plusLength(arr) {
     let thing =(arr[0] + arr.length);
-    console.log(thing);
+    // console.log(thing);
+    return thing;
 }
 plusLength([1, 7, 3, 3]);
 plusLength([false, 7, 3, 3]);
@@ -236,7 +239,8 @@ function greaterThanTwo(arr) {
         document.write(arr[i] + '<br>');
         counter++;
     }
-    console.log(counter);
+    // console.log(counter);
+    return counter;
 }
 greaterThanTwo([1,3,5,7,9,13]);
 
@@ -253,7 +257,8 @@ function greaterThanTwo(arr) {
         newArr.push(arr[i]);
         counter++;
       }
-      console.log(newArr);
+    //   console.log(newArr);
+      return newArr;
   }
     document.write(counter + " values after the 2nd input in this array");
 }
@@ -265,12 +270,13 @@ function lengthValue(num1, num2) {
     while (raygun.length < num1) {
         raygun.push(num2);
     }
-    console.log(raygun);
     if (raygun.length === num2) {
       document.write("Jinx!");
      }
+    //  console.log(raygun);
+     return raygun;
 }
-lengthValue(3,3);
+lengthValue(4,4);
 
 /*7 - Fit the First Value: Your function should accept an array. If value at [0] is greater than array’s length, print "Too big!"; if value at [0] is less than array’s length, print "Too small!"; otherwise print "Just right!". */
 function aZeroRef(arr) {
@@ -291,14 +297,16 @@ aZeroRef([4,4,5,6]);
 /*8 - Fahrenheit to Celsius: Kelvin wants to convert between temperature scales. Create fahrenheitToCelsius(fDegrees) that accepts a number of degrees in Fahrenheit, and returns the equivalent temperature as expressed in Celsius degrees. For review, Fahrenheit = (9/5 * Celsius) + 32 */
 function fahrenheitToCelsius(fDegrees) {
     let fahToCel = (fDegrees - 32) * (5/9);
-    console.log(fDegrees + " degrees Fahrenheit is " + fahToCel + " degrees Celsius");
+    // console.log(fDegrees + " degrees Fahrenheit is " + fahToCel + " degrees Celsius");
+    return fahToCel;
 }
 
 /*9 - Celsius to Fahrenheit: Create celsiusToFahrenheit(cDegrees) that accepts number of degrees Celsius, and returns the equivalent temperature expressed in Fahrenheit degrees. 
 (optional) Do Fahrenheit and Celsius values equate at a certain number? Scientific calculation can be complex, so for this challenge just try a series of Celsius integer values starting at 200, going downward(descending), checking whether it is equal to the corresponding Fahrenheit value. */
 function celsiusToFahrenheit(cDegrees) {
     let celToFah = (((9/5) * cDegrees) + 32);
-    console.log(cDegrees + " degrees Celsius is " + celToFah + " degrees Fahrenheit");
+    // console.log(cDegrees + " degrees Celsius is " + celToFah + " degrees Fahrenheit");
+    return celToFah;
 }
 
 /*9 optional */
@@ -307,8 +315,8 @@ function tempEquality() {
     for (let i = 200; (i > -200); i--) {
       cel = Math.floor((i - 32) * (5/9));
         if ( cel === i) {
-          console.log("Fahrenheit & Celsius are equal at " + cel);
-          return;
+        //   console.log("Fahrenheit & Celsius are equal at " + cel);
+          return cel;
         }
     }
 }
