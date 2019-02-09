@@ -179,3 +179,15 @@ function newFlexCount(lowNum, highNum, mult) {
           }
         }
 newFlexCount(22,934,15);
+
+/* Chapter 1 (page 20) – Fundamentals. Code answered from top to bottom, numbered for personal clarity */
+//Countdown - array will be "num" + 1 for zero since num is included in the array.
+function countdown(num) {
+    let countArr = [];
+    for (let i = num; i >= 0; i--) {
+        countArr.push(i);
+    }
+    console.log(countArr);
+}
+
+countdown(7);
